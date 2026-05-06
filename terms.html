@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms & Conditions | Vartistic Studio</title>
+  <meta name="description" content="Read the Terms and Conditions governing your use of the Vartistic Studio website and services." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.vartisticstudio.com/terms.html" />
+
+  <meta property="og:title" content="Terms & Conditions | Vartistic Studio" />
+  <meta property="og:description" content="Terms and Conditions for using Vartistic Studio." />
+  <meta property="og:url" content="https://www.vartisticstudio.com/terms.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Vartistic Studio" />
+
+  <link rel="icon" type="image/png" href="images/Logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+<!-- Cinematic Video Background -->
+<video autoplay muted loop playsinline class="fixed-video-bg">
+    <source src="Videos/hf_20260314_131748_f2ca2a28-fed7-44c8-b9a9-bd9acdd5ec31 - LOOP - Videobolt.net.mp4" type="video/mp4">
+</video>
+
+    <nav class="navbar liquid-glass">
+        <!-- Logo -->
+        <a href="index.html" class="logo" style="font-family: var(--font-display);">Vartistic<span>.</span></a>
+        
+        <!-- Center Navigation Capsule -->
+        <div class="nav-capsule" id="navCapsule">
+            <div class="nav-indicator"></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About Us</a></li>
+                <li><a href="work.html" class="nav-item">Our Work</a></li>
+                <li><a href="services.html" class="nav-item">Services</a></li>
+                <li><a href="team.html" class="nav-item">The Squad</a></li>
+                <!-- CTA inside mobile menu only -->
+                <li class="mobile-cta-wrapper">
+                    <a href="contact.html" class="cta-button mobile-cta">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Right Side CTA (Desktop) -->
+        <a href="contact.html" class="cta-button desktop-cta">CONTACT US</a>
+
+        <!-- Hamburger Icon (Mobile) -->
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+<div class="container">
+  <h1>Terms &amp; Conditions</h1>
+  <p class="updated">Last updated: February 28, 2026</p>
+
+  <p>By accessing or using <a href="https://www.vartisticstudio.com">vartisticstudio.com</a>, you agree to be bound by these Terms and Conditions. Please read them carefully.</p>
+
+  <h2>1. Use of the Website</h2>
+  <p>You agree to use this website only for lawful purposes and in a manner that does not infringe the rights of others or restrict their use and enjoyment of the site.</p>
+
+  <h2>2. Intellectual Property</h2>
+  <p>All content on this site — including text, graphics, logos, images, and software — is the property of Vartistic Studio and is protected by applicable intellectual property laws. You may not reproduce or distribute content without prior written permission.</p>
+
+  <h2>3. Disclaimer of Warranties</h2>
+  <p>This website is provided "as is" without warranties of any kind, express or implied. We do not guarantee the accuracy, completeness, or usefulness of any information on the site.</p>
+
+  <h2>4. Limitation of Liability</h2>
+  <p>Vartistic Studio shall not be liable for any direct, indirect, incidental, or consequential damages arising from your use of or inability to use this website.</p>
+
+  <h2>5. Third-Party Links</h2>
+  <p>Our site may contain links to third-party websites. We have no control over the content or practices of those sites and are not responsible for their content or privacy policies.</p>
+
+  <h2>6. Advertising</h2>
+  <p>This site participates in the Google AdSense program. Ads displayed are provided by Google and are subject to Google's terms and privacy policies.</p>
+
+  <h2>7. Changes to Terms</h2>
+  <p>We reserve the right to modify these Terms at any time. Continued use of the website after changes constitutes acceptance of the new Terms.</p>
+
+  <h2>8. Governing Law</h2>
+  <p>These Terms shall be governed by the laws of the applicable jurisdiction, without regard to conflict of law provisions.</p>
+
+  <h2>9. Contact</h2>
+  <p>For questions about these Terms, contact us at <a href="mailto:vartisticstudio@gmail.com">vartisticstudio@gmail.com</a>.</p>
+</div>
+
+<footer>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+  <p style="margin-top:1.5rem; letter-spacing: 2px;">Vartistic Studio. All rights reserved.</p>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script type="module">
+        import { animate, scroll, stagger, inView } from "https://cdn.jsdelivr.net/npm/motion@12.0.0/+esm";
+        window.Motion = { animate, scroll, stagger, inView };
+    </script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.querySelector('.fixed-video-bg');
+            if (video) {
+                video.playbackRate = 0.75;
+                video.addEventListener('loadeddata', function() {
+                    video.classList.add('loaded');
+                });
+                video.addEventListener('ended', function() {
+                    video.play();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
