@@ -1,357 +1,665 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vartistic Studio | Premium Web Design & Custom Solutions</title>
-    <meta name="description"
-        content="Vartistic Studio specializes in custom web development, HTML template editing, website replicas, 24/7 maintenance, and Python automation tools. Fast coding, real results.">
-    <meta name="keywords"
-        content="custom web development, website replica service, html template editing, python automation tools, fast website builder, fix website errors, seo agency, vibe coding">
-    <meta property="og:title" content="Vartistic Studio | Code Solutions & Tools">
-    <meta property="og:description"
-        content="We build from scratch, edit templates, clone websites, and build automation tools.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.vartisticstudio.com/">
-    <meta name="twitter:card" content="summary_large_image">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" href="images/Logo.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
-    <link rel="stylesheet" href="style.css">
+  <!-- SEO -->
+  <title>Vartistic Studio | Modern Web Development & Design Agency</title>
+  <meta name="description" content="Vartistic Studio is a full-service web development agency specializing in custom websites, HTML template editing, website replicas, Python automation tools, and SEO-optimized digital experiences." />
+  <meta name="keywords" content="web development agency, custom website design, HTML template editing, Python automation, website replica, SEO optimization, vartistic studio, web design india" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.vartisticstudio.com/" />
+  <meta name="author" content="Vartistic Studio" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.vartisticstudio.com/" />
+  <meta property="og:title" content="Vartistic Studio | Modern Web Development & Design Agency" />
+  <meta property="og:description" content="We build custom websites, edit templates, clone sites, and create Python automation tools. Fast delivery, real results." />
+  <meta property="og:image" content="https://www.vartisticstudio.com/images/Logo.png" />
+  <meta property="og:site_name" content="Vartistic Studio" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WQKN8PN9QV"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-WQKN8PN9QV');
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8280876679592716"
-        crossorigin="anonymous"></script>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vartistic Studio | Modern Web Development & Design" />
+  <meta name="twitter:description" content="Custom websites, automation tools & digital experiences built by Vartistic Studio." />
+  <meta name="twitter:image" content="https://www.vartisticstudio.com/images/Logo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Vartistic Studio",
+    "url": "https://www.vartisticstudio.com",
+    "logo": "https://www.vartisticstudio.com/images/Logo.png",
+    "description": "Full-service web development agency specializing in custom websites, HTML template editing, website cloning, Python automation tools, and SEO.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Artist Village",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/vartisticstudio/",
+      "https://www.instagram.com/vartisticstudio"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Web Development Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Website Development" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "HTML Template Editing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Replica / Cloning" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Python Automation Tools" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO Optimization" } }
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Vartistic Studio Portfolio Projects",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ambar Aerobics Fitness Website", "url": "https://ambaraerobicsfitness.com/" },
+      { "@type": "ListItem", "position": 2, "name": "NSZ Goa Ride Tourism Platform", "url": "http://nszgoaride.com/" },
+      { "@type": "ListItem", "position": 3, "name": "Royal Goa Ride SEO Platform", "url": "https://royalgoaride.com/" },
+      { "@type": "ListItem", "position": 4, "name": "Brain Box Media B2B Site", "url": "https://www.brainboxmedia.in/" },
+      { "@type": "ListItem", "position": 5, "name": "Auto-Mailer Engine v2.0 (Python Automation)" }
+    ]
+  }
+  </script>
 </head>
-
 <body>
 
-    <!-- Cinematic Video Background -->
-    <video autoplay muted loop playsinline class="fixed-video-bg">
-        <source src="Videos/hf_20260314_131748_f2ca2a28-fed7-44c8-b9a9-bd9acdd5ec31 - LOOP - Videobolt.net.mp4"
-            type="video/mp4">
-    </video>
+  <!-- ======== NOISE OVERLAY ======== -->
+  <div class="noise" aria-hidden="true"></div>
 
-    <!-- PRELOADER #6: Cinematic 4-Panel Reveal -->
-    <div class="preloader" id="preloader" aria-busy="true">
-
-        <!-- SVG MASK REVEAL: Creates transparent windows in a solid background -->
-        <svg class="preloader-mask-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <defs>
-                <mask id="hole-mask">
-                    <!-- White covers everything (Solid) -->
-                    <rect width="100" height="100" fill="white" />
-                    <!-- Black punches holes (Transparent) -->
-                    <!-- Exact Framing Layout: Pushed to edges to mirror current image -->
-                    <rect class="hole h1" x="13" y="20" width="9" height="60" fill="black" />
-                    <rect class="hole h2" x="26" y="7.5" width="8" height="85" fill="black" />
-                    <rect class="hole h3" x="65" y="7.5" width="8" height="85" fill="black" />
-                    <rect class="hole h4" x="78" y="20" width="9" height="60" fill="black" />
-                </mask>
-            </defs>
-            <!-- The Solid Background Rect -->
-            <rect width="100" height="100" fill="black" mask="url(#hole-mask)" />
-        </svg>
-
-        <div class="preloader-content">
-            <div class="preloader-branding" style="font-family: var(--font-display);">Vartistic<span>.</span></div>
-            <div class="preloader-line-container">
-                <div class="preloader-line"></div>
-                <div class="preloader-line-active"></div>
-            </div>
-        </div>
-    </div>
-
-    <nav class="navbar liquid-glass">
-        <!-- Logo -->
-        <a href="index.html" class="logo" style="font-family: var(--font-display);">Vartistic<span>.</span></a>
-
-        <!-- Simple Navigation Links -->
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html#home" data-scroll-to class="nav-item">Home</a></li>
-            <li><a href="about.html" class="nav-item">About Us</a></li>
-            <li><a href="work.html" class="nav-item">Our Work</a></li>
-            <li><a href="services.html" class="nav-item">Services</a></li>
-            <li><a href="team.html" class="nav-item">The Squad</a></li>
-            <li class="mobile-cta-wrapper">
-                <a href="contact.html" class="cta-button mobile-cta">CONTACT US</a>
-            </li>
-        </ul>
-
-        <!-- Right Side CTA (Desktop) -->
-        <a href="contact.html" class="cta-button desktop-cta">CONTACT US</a>
-
-        <!-- Hamburger Icon (Mobile) -->
-        <div class="hamburger" id="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
+  <!-- ======== NAV ======== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/" class="nav-logo" aria-label="Vartistic Studio Home">
+        <span class="logo-mark">V.</span>
+        <span class="logo-name">Vartistic</span>
+      </a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Work</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
+  </header>
 
-    <div id="main-container" data-scroll-container>
+  <main>
 
-        <header class="hero" id="home" data-scroll-section>
-            <div class="hero-bg"></div>
+    <!-- ======== HERO ======== -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
 
-            <div class="drag-object" data-scroll data-scroll-speed="2" style="top: 55%; left: 42%;">
-                <span class="drag-instruction">Drag Me</span>
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          Available for new projects
+        </div>
+        <h1 class="hero-heading reveal" id="hero-heading">
+          Modern Web<br />
+          <em class="hero-em">Development</em><br />
+          &amp; Design
+        </h1>
+        <p class="hero-sub reveal">
+          We craft high-performance websites, automate workflows with Python, and build
+          digital experiences that convert — from scratch or from your template.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact Us ↗</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="hero-stat">
+            <span class="stat-num" data-target="12">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat-sep" aria-hidden="true">/</div>
+          <div class="hero-stat">
+            <span class="stat-num" data-target="98">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+          <div class="stat-sep" aria-hidden="true">/</div>
+          <div class="hero-stat">
+            <span class="stat-num" data-target="4">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Industries</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-marquee-wrap" aria-hidden="true">
+        <div class="hero-marquee">
+          <span>CUSTOM BUILDS &nbsp;·&nbsp; TEMPLATE EDITING &nbsp;·&nbsp; WEBSITE CLONING &nbsp;·&nbsp; PYTHON AUTOMATION &nbsp;·&nbsp; SEO OPTIMIZED &nbsp;·&nbsp; FAST DELIVERY &nbsp;·&nbsp;</span>
+          <span>CUSTOM BUILDS &nbsp;·&nbsp; TEMPLATE EDITING &nbsp;·&nbsp; WEBSITE CLONING &nbsp;·&nbsp; PYTHON AUTOMATION &nbsp;·&nbsp; SEO OPTIMIZED &nbsp;·&nbsp; FAST DELIVERY &nbsp;·&nbsp;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== ABOUT ======== -->
+    <section class="about section-pad" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-label reveal">About the Studio</div>
+        <h2 class="section-heading reveal" id="about-heading">
+          We build <em>without limits.</em>
+        </h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>Vartistic Studio is a full-service development agency based in Maharashtra, India. We don't use page builders or CMS bloat — every line of code is written by hand for maximum performance, customization, and SEO impact.</p>
+            <p>From rapid "Vibe Coding" for quick launches to complex automation systems, we solve real business problems with elegant engineering.</p>
+            <div class="tech-pills">
+              <span class="pill">HTML / CSS</span>
+              <span class="pill">Python</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">GSAP</span>
+              <span class="pill">SEO</span>
+              <span class="pill">Automation</span>
             </div>
-
-            <div class="drag-object mobile-orb" style="top: 18%; left: 8%; opacity: 0.75;" aria-hidden="true"></div>
-
-            <div class="hero-content" data-scroll data-scroll-speed="1">
-                <h1>Crafting Next-Gen<br><span class="text-gradient">Experience.</span></h1>
-                <p>We are a full-service development agency. We build <strong>Custom Websites</strong>, edit
-                    <strong>HTML Templates</strong>, create <strong>Pixel-Perfect Replicas</strong>, and build
-                    <strong>Python Tools</strong>. From problem-solving to rapid "Vibe Coding," we deliver results.
-                </p>
-                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                    <a href="services.html" class="cta-btn primary">View All Services</a>
-                    <a href="work.html" class="cta-btn secondary">See Our Work</a>
-                </div>
+          </div>
+          <div class="about-cards">
+            <div class="about-card reveal">
+              <div class="about-card-icon" aria-hidden="true">⚡</div>
+              <h3>Full Code Control</h3>
+              <p>Hand-written code means better performance, flexibility, and no licensing lock-in.</p>
             </div>
-
-            <div class="hero-form-container liquid-glass" data-scroll data-scroll-speed="1.5">
-                <form class="hero-form" novalidate>
-                    <h3>Start Your Project</h3>
-
-                    <input type="text" name="_gotcha"
-                        style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;opacity:0;"
-                        tabindex="-1" aria-hidden="true">
-
-                    <div class="form-group"><input type="text" name="name" placeholder="Your Name" required></div>
-                    <div class="form-group"><input type="email" name="email" placeholder="Your Email" required></div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-                    </div>
-                    <div class="form-group">
-                        <select name="service_type" required>
-                            <option value="">What do you need?</option>
-                            <option>Build from Scratch</option>
-                            <option>Template Editing</option>
-                            <option>Website Replica/Clone</option>
-                            <option>Redesign & Fixes</option>
-                            <option>Python Automation</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" rows="3" placeholder="Tell us about your project..."
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Let's Talk</button>
-                    <div class="form-result" aria-live="polite" style="margin-top:12px;"></div>
-                </form>
+            <div class="about-card reveal">
+              <div class="about-card-icon" aria-hidden="true">📈</div>
+              <h3>SEO-First Thinking</h3>
+              <p>Every project is structured to rank — from semantic HTML to Core Web Vitals.</p>
             </div>
-        </header>
-
-        <div class="marquee-section" data-scroll-section>
-            <div class="marquee-content" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
-                <span>CUSTOM BUILDS • TEMPLATE EDITING • WEBSITE CLONING • PYTHON AUTOMATION • REDESIGNS • FAST DELIVERY
-                    • CUSTOM BUILDS • TEMPLATE EDITING • </span>
+            <div class="about-card reveal">
+              <div class="about-card-icon" aria-hidden="true">🤖</div>
+              <h3>Real Automation</h3>
+              <p>Python tools that solve your actual workflow problems, not just demos.</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== SERVICES ======== -->
+    <section class="services section-pad" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-label reveal">What We Do</div>
+        <h2 class="section-heading reveal" id="services-heading">Services &amp; <em>Capabilities</em></h2>
+        <div class="services-list" role="list">
+
+          <article class="service-row reveal" role="listitem">
+            <div class="service-num" aria-hidden="true">01</div>
+            <div class="service-body">
+              <h3>Static &amp; Dynamic Websites</h3>
+              <p>From lightning-fast static landing pages to full-stack data-driven platforms. Clean code, zero bloat, peak performance.</p>
+            </div>
+            <div class="service-tags" aria-label="Technologies">
+              <span>Static</span><span>Dynamic</span><span>Full-Stack</span>
+            </div>
+          </article>
+
+          <article class="service-row reveal" role="listitem">
+            <div class="service-num" aria-hidden="true">02</div>
+            <div class="service-body">
+              <h3>HTML Template Editing</h3>
+              <p>Got a pre-bought template? We dive into the raw code to customize, optimize, and strip bloat for a truly unique result.</p>
+            </div>
+            <div class="service-tags" aria-label="Technologies">
+              <span>Custom Code</span><span>Optimization</span><span>Branding</span>
+            </div>
+          </article>
+
+          <article class="service-row reveal" role="listitem">
+            <div class="service-num" aria-hidden="true">03</div>
+            <div class="service-body">
+              <h3>Website Replica / Cloning</h3>
+              <p>Pixel-perfect replicas of any site you admire, tailored with your content and powered by clean, custom code.</p>
+            </div>
+            <div class="service-tags" aria-label="Technologies">
+              <span>Pixel-Perfect</span><span>Cloning</span><span>Custom Content</span>
+            </div>
+          </article>
+
+          <article class="service-row reveal" role="listitem">
+            <div class="service-num" aria-hidden="true">04</div>
+            <div class="service-body">
+              <h3>Python Automation Tools</h3>
+              <p>Custom scripts to automate your workflows — bulk mailers, scrapers, data pipelines. Real efficiency gains, not demos.</p>
+            </div>
+            <div class="service-tags" aria-label="Technologies">
+              <span>Python</span><span>SMTP</span><span>Automation</span>
+            </div>
+          </article>
+
+          <article class="service-row reveal" role="listitem">
+            <div class="service-num" aria-hidden="true">05</div>
+            <div class="service-body">
+              <h3>Redesign &amp; Modernization</h3>
+              <p>Transform outdated websites into modern powerhouses. Better visuals, faster load times, and UX that converts.</p>
+            </div>
+            <div class="service-tags" aria-label="Technologies">
+              <span>Rebranding</span><span>Speed</span><span>UX</span>
+            </div>
+          </article>
+
+          <article class="service-row reveal" role="listitem">
+            <div class="service-num" aria-hidden="true">06</div>
+            <div class="service-body">
+              <h3>Maintenance &amp; 24/7 Support</h3>
+              <p>Bug fixes, updates, security patches. Focus on your business while we keep the tech running.</p>
+            </div>
+            <div class="service-tags" aria-label="Technologies">
+              <span>Maintenance</span><span>Security</span><span>Support</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PROJECTS ======== -->
+    <section class="projects section-pad" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-label reveal">Portfolio</div>
+        <div class="projects-header">
+          <h2 class="section-heading reveal" id="projects-heading">12+ Projects <em>Completed</em></h2>
+          <p class="projects-sub reveal">Selected work across fitness, tourism, B2B, and automation.</p>
         </div>
 
-        <!-- SERVICES SECTION -->
-        <section id="services" data-scroll-section class="services-modern">
-            <h2 class="section-title" data-scroll data-scroll-speed="0.5">Comprehensive <span
-                    class="highlight">Solutions</span></h2>
+        <div class="projects-grid">
 
-            <div class="feature-grid">
-
-                <!-- Card 01: Build & Redesign -->
-                <div class="feature-card" data-scroll data-scroll-speed="0.5">
-                    <div class="card-bg-glow"></div>
-                    <div class="card-content">
-                        <div class="card-header">
-                            <div class="icon-box">🚀</div>
-                            <span class="card-step">01</span>
-                        </div>
-                        <h3>Build & Redesign</h3>
-                        <p>We build websites from scratch or modernize existing ones. We focus on clean code, SEO
-                            rankings, and high performance.</p>
-                        <a href="services.html" class="card-link">Explore Services &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Card 02: Edits & Replicas -->
-                <div class="feature-card" data-scroll data-scroll-speed="0.7">
-                    <div class="card-bg-glow"></div>
-                    <div class="card-content">
-                        <div class="card-header">
-                            <div class="icon-box">⚡</div>
-                            <span class="card-step">02</span>
-                        </div>
-                        <h3>Edits & Replicas</h3>
-                        <p>Got a template? We edit it. Want a clone? We replicate it perfectly. We also offer "Vibe
-                            Coding" for super-fast delivery.</p>
-                        <a href="services.html" class="card-link">See Capabilities &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Card 03: Tools & Maintenance -->
-                <div class="feature-card" data-scroll data-scroll-speed="0.9">
-                    <div class="card-bg-glow"></div>
-                    <div class="card-content">
-                        <div class="card-header">
-                            <div class="icon-box">🛠️</div>
-                            <span class="card-step">03</span>
-                        </div>
-                        <h3>Tools & Maintenance</h3>
-                        <p>We fix bugs, maintain sites, and build Python automation tools (like our Auto-Mailer) to
-                            solve real business problems.</p>
-                        <a href="services.html" class="card-link">View Tools &rarr;</a>
-                    </div>
-                </div>
-
+          <!-- Project 1 -->
+          <article class="project-card reveal" aria-labelledby="proj1-title">
+            <div class="project-card-visual">
+              <img
+                src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80"
+                alt="Ambar Aerobics fitness website screenshot showing workout classes and membership page"
+                loading="lazy"
+                width="800" height="500"
+              />
+              <div class="project-card-overlay">
+                <a href="https://ambaraerobicsfitness.com/" target="_blank" rel="noopener noreferrer" class="overlay-link" aria-label="Visit Ambar Aerobics live site">
+                  Visit Live Site ↗
+                </a>
+              </div>
+              <div class="project-num-badge" aria-hidden="true">01</div>
             </div>
-        </section>
-
-        </section>
-
-        <section class="stats-section" data-scroll-section>
-            <div class="stats-container">
-                <div class="stat-box" data-scroll data-scroll-speed="1">
-                    <span class="stat-number">#1</span>
-                    <span class="stat-label">Code Quality</span>
+            <div class="project-card-body">
+              <h3 class="project-title" id="proj1-title">Ambar Aerobics</h3>
+              <p class="project-desc">High-energy fitness brand website engineered to convert visitors into members. Bold hero, class showcase, and mobile-optimised lead generation funnel.</p>
+              <div class="project-meta">
+                <div class="project-tags" aria-label="Technologies used">
+                  <span>Fitness UI</span><span>Lead Gen</span><span>Multi-Page</span><span>Responsive</span>
                 </div>
-                <div class="stat-box" data-scroll data-scroll-speed="1.5">
-                    <span class="stat-number">Fast</span>
-                    <span class="stat-label">Vibe Coding</span>
+                <div class="project-results">
+                  <span class="result-chip">+40% Engagement</span>
+                  <span class="result-chip">100% Mobile</span>
                 </div>
-                <div class="stat-box" data-scroll data-scroll-speed="2">
-                    <span class="stat-number">Real</span>
-                    <span class="stat-label">Solutions</span>
-                </div>
+              </div>
+              <a href="https://ambaraerobicsfitness.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                ambaraerobicsfitness.com ↗
+              </a>
             </div>
-        </section>
+          </article>
 
-        <section data-scroll-section>
-            <h2 class="section-title" data-scroll data-scroll-speed="0.6">Why <span class="highlight">Vartistic?</span>
-            </h2>
-            <div class="about-grid">
-                <div class="about-card" data-scroll data-scroll-speed="0.9">
-                    <h3>Full Code Control</h3>
-                    <p>We don't use builders. Whether it's a scratch build, a replica, or a template edit, we write the
-                        code directly. This guarantees better customization and speed.</p>
-                    <div class="pill-row">
-                        <span class="pill">HTML/CSS</span><span class="pill">Python</span><span class="pill">No
-                            CMS</span>
-                    </div>
-                </div>
-                <div class="about-card" data-scroll data-scroll-speed="0.5">
-                    <h3>SEO & Ranking</h3>
-                    <p>Everything we do—from custom builds to replicas—is optimized for search engines. We structure
-                        your site specifically to help you rank at the top.</p>
-                    <div class="pill-row">
-                        <span class="pill">SEO</span><span class="pill">Ranking</span><span class="pill">Traffic</span>
-                    </div>
-                </div>
-                <div class="about-card" data-scroll data-scroll-speed="0.7">
-                    <h3>Problem Solvers</h3>
-                    <p>We build tools for the real world. Our Python Auto-Mailer is proof we can automate your business.
-                        We are currently building even bigger tools for the future.</p>
-                    <div class="pill-row">
-                        <span class="pill">Automation</span><span class="pill">Logic</span><span
-                            class="pill">Tools</span>
-                    </div>
-                </div>
+          <!-- Project 2 -->
+          <article class="project-card reveal" aria-labelledby="proj2-title">
+            <div class="project-card-visual">
+              <img
+                src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80"
+                alt="NSZ Goa Ride tourism booking platform showing scooter rentals and Goa travel packages"
+                loading="lazy"
+                width="800" height="500"
+              />
+              <div class="project-card-overlay">
+                <a href="http://nszgoaride.com/" target="_blank" rel="noopener noreferrer" class="overlay-link" aria-label="Visit NSZ Goa Ride live site">
+                  Visit Live Site ↗
+                </a>
+              </div>
+              <div class="project-num-badge" aria-hidden="true">02</div>
             </div>
-        </section>
-
-        <section data-scroll-section>
-            <h2 class="section-title" data-scroll data-scroll-speed="0.6">FAQs</h2>
-            <div class="faq-container">
-                <div class="faq-item" data-scroll data-scroll-speed="0.9">
-                    <div class="faq-question">Can you edit a template or clone a site? <span>+</span></div>
-                    <div class="faq-answer">Yes! We offer HTML template editing and website replica services. We can
-                        make a site look exactly how you want it using clean code.</div>
+            <div class="project-card-body">
+              <h3 class="project-title" id="proj2-title">NSZ Goa Ride</h3>
+              <p class="project-desc">Mobile-first tourism booking platform designed for speed and one-tap conversions. Stripped of every unnecessary click to serve travelers on mobile networks.</p>
+              <div class="project-meta">
+                <div class="project-tags" aria-label="Technologies used">
+                  <span>Tourism</span><span>Booking UI</span><span>Mobile-First</span><span>UX</span>
                 </div>
-                <div class="faq-item" data-scroll data-scroll-speed="0.7">
-                    <div class="faq-question">What is "Vibe Coding"? <span>+</span></div>
-                    <div class="faq-answer">It is our fast-track service. If you need a landing page or simple site
-                        urgently, we use rapid coding techniques to deliver it in record time.</div>
+                <div class="project-results">
+                  <span class="result-chip">3x Faster Load</span>
+                  <span class="result-chip">-60% Bounce</span>
                 </div>
-                <div class="faq-item" data-scroll data-scroll-speed="0.5">
-                    <div class="faq-question">Do you also do maintenance & automation? <span>+</span></div>
-                    <div class="faq-answer">Yes. We fix bugs, update sites, and build Python tools (like bulk mailers)
-                        to solve real-life efficiency problems.</div>
-                </div>
+              </div>
+              <a href="http://nszgoaride.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                nszgoaride.com ↗
+              </a>
             </div>
-        </section>
+          </article>
 
-        <button class="back-to-top">↑</button>
-
-        <section class="cta-banner" data-scroll-section>
-            <div data-scroll data-scroll-speed="1">
-                <h2>Need a Solution?</h2>
-                <p>From custom websites to automation tools.</p>
-                <a href="contact.html" class="cta-btn primary" style="margin-top: 20px; display: inline-block;">Get
-                    Started</a>
+          <!-- Project 3 -->
+          <article class="project-card reveal" aria-labelledby="proj3-title">
+            <div class="project-card-visual">
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+                alt="Royal Goa Ride premium rental platform showcasing Goa travel experiences with SEO rankings"
+                loading="lazy"
+                width="800" height="500"
+              />
+              <div class="project-card-overlay">
+                <a href="https://royalgoaride.com/" target="_blank" rel="noopener noreferrer" class="overlay-link" aria-label="Visit Royal Goa Ride live site">
+                  Visit Live Site ↗
+                </a>
+              </div>
+              <div class="project-num-badge" aria-hidden="true">03</div>
             </div>
-        </section>
-
-        <footer data-scroll-section class="liquid-glass">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3 style="font-family: var(--font-display);">Vartistic Studio<span>.</span></h3>
-                    <p>Building Digital Legacies.</p>
+            <div class="project-card-body">
+              <h3 class="project-title" id="proj3-title">Royal Goa Ride</h3>
+              <p class="project-desc">SEO-engineered premium rental platform. Advanced technical SEO, structured data, and performance optimization pushed it to Page 1 for Goa rental searches.</p>
+              <div class="project-meta">
+                <div class="project-tags" aria-label="Technologies used">
+                  <span>Booking Engine</span><span>Technical SEO</span><span>Schema</span><span>Premium UX</span>
                 </div>
-                <div class="footer-links">
-                    <a href="index.html" class="active">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="work.html">Our Work</a>
-                    <a href="services.html">Services</a>
-                    <a href="team.html">The Squad</a>
-                    <a href="contact.html">Contact Us</a>
+                <div class="project-results">
+                  <span class="result-chip">#1 Page 1</span>
+                  <span class="result-chip">+85% Traffic</span>
                 </div>
-                <div class="footer-socials">
-                    <a href="https://www.linkedin.com/company/vartisticstudio/?viewAsMember=true" target="_blank"
-                        rel="noopener noreferrer">LinkedIn</a>
-                    <a href="https://www.instagram.com/vartisticstudio" target="_blank"
-                        rel="noopener noreferrer">Instagram</a>
-                </div>
+              </div>
+              <a href="https://royalgoaride.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                royalgoaride.com ↗
+              </a>
             </div>
-            <div class="footer-bottom">
-                <p>Vartistic. All Rights Reserved.</p>
-            </div>
-        </footer>
+          </article>
 
+          <!-- Project 4 -->
+          <article class="project-card reveal" aria-labelledby="proj4-title">
+            <div class="project-card-visual">
+              <img
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80"
+                alt="Brain Box Media B2B marketing agency website with partner showcase and CSS grid layout"
+                loading="lazy"
+                width="800" height="500"
+              />
+              <div class="project-card-overlay">
+                <a href="https://www.brainboxmedia.in/" target="_blank" rel="noopener noreferrer" class="overlay-link" aria-label="Visit Brain Box Media live site">
+                  Visit Live Site ↗
+                </a>
+              </div>
+              <div class="project-num-badge" aria-hidden="true">04</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title" id="proj4-title">Brain Box Media</h3>
+              <p class="project-desc">B2B marketing brand requiring instant credibility. Dynamic partner showcase with custom CSS-Grid scaling — zero layout shift, A+ Lighthouse score.</p>
+              <div class="project-meta">
+                <div class="project-tags" aria-label="Technologies used">
+                  <span>B2B</span><span>CSS Grid</span><span>Component Design</span><span>Performance</span>
+                </div>
+                <div class="project-results">
+                  <span class="result-chip">A+ Lighthouse</span>
+                  <span class="result-chip">0ms CLS</span>
+                </div>
+              </div>
+              <a href="https://www.brainboxmedia.in/" target="_blank" rel="noopener noreferrer" class="project-link">
+                brainboxmedia.in ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card project-card--dark reveal" aria-labelledby="proj5-title">
+            <div class="project-card-visual">
+              <img
+                src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&q=80"
+                alt="Auto-Mailer Engine Python automation tool interface showing email campaign dashboard"
+                loading="lazy"
+                width="800" height="500"
+              />
+              <div class="project-card-overlay">
+                <span class="overlay-link overlay-link--muted">Internal Tool</span>
+              </div>
+              <div class="project-num-badge" aria-hidden="true">05</div>
+              <div class="project-status-badge">Live</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title" id="proj5-title">Auto-Mailer Engine v2.0</h3>
+              <p class="project-desc">Custom Python backend that sends 10,000+ personalised emails with human-typing mimicry and dynamic SMTP rotation. 98% deliverability, built-in Excel validator.</p>
+              <div class="project-meta">
+                <div class="project-tags" aria-label="Technologies used">
+                  <span>Python</span><span>SMTP</span><span>Excel Integration</span><span>Growth Hacking</span>
+                </div>
+                <div class="project-results">
+                  <span class="result-chip">98% Deliverability</span>
+                  <span class="result-chip">10k+ Emails</span>
+                </div>
+              </div>
+              <span class="project-link project-link--muted">Documentation available on request</span>
+            </div>
+          </article>
+
+          <!-- Project 6 — Eatlytic -->
+          <article class="project-card project-card--dark reveal" aria-labelledby="proj6-title">
+            <div class="project-card-visual">
+              <img
+                src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80"
+                alt="Eatlytic AI food analyzer showing nutrition label scanning and ingredient analysis interface"
+                loading="lazy"
+                width="800" height="500"
+              />
+              <div class="project-card-overlay">
+                <span class="overlay-link overlay-link--muted">Coming Soon</span>
+              </div>
+              <div class="project-num-badge" aria-hidden="true">06</div>
+              <div class="project-status-badge project-status-badge--wip">In Progress</div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title" id="proj6-title">Eatlytic — AI Food Analyzer</h3>
+              <p class="project-desc">Snap a photo of any food label. AI extracts ingredients, analyses nutritional values, and flags hidden health risks. Making food transparency instant and accessible.</p>
+              <div class="project-meta">
+                <div class="project-tags" aria-label="Technologies used">
+                  <span>AI Prototype</span><span>Vision API</span><span>Live Search</span><span>Nutrition</span>
+                </div>
+                <div class="project-results">
+                  <span class="result-chip">60% Complete</span>
+                  <span class="result-chip">AI-Powered</span>
+                </div>
+              </div>
+              <span class="project-link project-link--muted">Feedback phase launching soon</span>
+            </div>
+          </article>
+
+        </div><!-- /projects-grid -->
+      </div>
+    </section>
+
+    <!-- ======== TEAM ======== -->
+    <section class="team section-pad" id="team" aria-labelledby="team-heading">
+      <div class="container">
+        <div class="section-label reveal">The People</div>
+        <h2 class="section-heading reveal" id="team-heading">7 Obsessive <em>Builders</em></h2>
+        <p class="team-sub reveal">A collective of engineers, designers, and problem-solvers based in India.</p>
+        <div class="team-grid">
+          <div class="team-card reveal">
+            <div class="team-avatar" aria-hidden="true">R</div>
+            <div class="team-info">
+              <h3>Ritesh</h3>
+              <span>UI/UX &amp; Vibe Coder</span>
+            </div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar" aria-hidden="true">S</div>
+            <div class="team-info">
+              <h3>Sarib</h3>
+              <span>AI Developer</span>
+            </div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar" aria-hidden="true">Sh</div>
+            <div class="team-info">
+              <h3>Shoaib</h3>
+              <span>Backend / Python Expert</span>
+            </div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar" aria-hidden="true">Ro</div>
+            <div class="team-info">
+              <h3>Rohit</h3>
+              <span>WordPress / App Dev</span>
+            </div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar" aria-hidden="true">Sa</div>
+            <div class="team-info">
+              <h3>Saad</h3>
+              <span>Cyber Security Expert</span>
+            </div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar" aria-hidden="true">Re</div>
+            <div class="team-info">
+              <h3>Renuka</h3>
+              <span>Communicator</span>
+            </div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar" aria-hidden="true">O</div>
+            <div class="team-info">
+              <h3>Owais</h3>
+              <span>Social Media Handler</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CONTACT ======== -->
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-left reveal">
+            <div class="section-label">Get In Touch</div>
+            <h2 class="section-heading" id="contact-heading">Start Your <em>Project</em></h2>
+            <p>Tell us what you need. We'll schedule a Google Meet, align on scope, and start building your masterpiece.</p>
+            <div class="contact-steps">
+              <div class="contact-step">
+                <span class="step-num" aria-hidden="true">1</span>
+                <div>
+                  <strong>Fill the form</strong>
+                  <p>Share your project requirements with us.</p>
+                </div>
+              </div>
+              <div class="contact-step">
+                <span class="step-num" aria-hidden="true">2</span>
+                <div>
+                  <strong>Google Meet</strong>
+                  <p>We schedule a video call to align on scope.</p>
+                </div>
+              </div>
+              <div class="contact-step">
+                <span class="step-num" aria-hidden="true">3</span>
+                <div>
+                  <strong>We build</strong>
+                  <p>Our team starts coding your vision.</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-socials">
+              <a href="https://www.linkedin.com/company/vartisticstudio/" target="_blank" rel="noopener noreferrer" aria-label="Vartistic Studio on LinkedIn">LinkedIn</a>
+              <a href="https://www.instagram.com/vartisticstudio" target="_blank" rel="noopener noreferrer" aria-label="Vartistic Studio on Instagram">Instagram</a>
+              <a href="mailto:vartisticstudio@gmail.com" aria-label="Email Vartistic Studio">Email</a>
+            </div>
+          </div>
+          <div class="contact-right reveal">
+            <form class="contact-form" id="contactForm" novalidate aria-label="Project enquiry form">
+              <input type="text" name="_gotcha" tabindex="-1" aria-hidden="true" style="display:none" />
+              <div class="form-row">
+                <div class="field-group">
+                  <label for="cf-name">Full Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="cf-name" name="name" placeholder="Your name" required autocomplete="name" />
+                </div>
+                <div class="field-group">
+                  <label for="cf-email">Email <span aria-hidden="true">*</span></label>
+                  <input type="email" id="cf-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+                </div>
+              </div>
+              <div class="field-group">
+                <label for="cf-service">Service Needed</label>
+                <select id="cf-service" name="service">
+                  <option value="">Select a service…</option>
+                  <option>Build from Scratch</option>
+                  <option>Template Editing</option>
+                  <option>Website Replica / Clone</option>
+                  <option>Redesign &amp; Fixes</option>
+                  <option>Python Automation</option>
+                  <option>SEO Optimization</option>
+                  <option>Maintenance &amp; Support</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <label for="cf-message">Project Details <span aria-hidden="true">*</span></label>
+                <textarea id="cf-message" name="message" rows="5" placeholder="Tell us about your project, budget, timeline…" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send Enquiry →</button>
+              <div class="form-result" id="form-result" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo" aria-label="Vartistic Studio Home">
+            <span class="logo-mark">V.</span>
+            <span class="logo-name">Vartistic</span>
+          </a>
+          <p>Creative Minds. Obsessive Builders.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Work</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+          <a href="/privacy-policy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </nav>
+        <div class="footer-social" aria-label="Social links">
+          <a href="https://www.linkedin.com/company/vartisticstudio/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+          <a href="https://www.instagram.com/vartisticstudio" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Vartistic Studio. All Rights Reserved.</p>
+        <p class="footer-tagline">Built with obsession in Maharashtra, India.</p>
+      </div>
     </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-    <script type="module">
-        import { animate, scroll, stagger, inView } from "https://cdn.jsdelivr.net/npm/motion@12.0.0/+esm";
-        window.Motion = { animate, scroll, stagger, inView };
-    </script>
-    <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const video = document.querySelector('.fixed-video-bg');
-            if (video) {
-                video.addEventListener('loadeddata', function () {
-                    video.classList.add('loaded');
-                });
-                video.addEventListener('ended', function () {
-                    video.play();
-                });
-            }
-        });
-    </script>
+  <!-- Back to top -->
+  <button class="back-top" id="back-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
